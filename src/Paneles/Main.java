@@ -43,13 +43,14 @@ public class Main extends javax.swing.JFrame {
         btnVer = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Credenciales");
 
+        jDesktopPane1.setBackground(new java.awt.Color(0, 51, 102));
         jDesktopPane1.setMaximumSize(new java.awt.Dimension(32767, 32767));
 
         jPanel4.setBackground(java.awt.Color.lightGray);
 
         textoIncioSesion.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        textoIncioSesion.setForeground(java.awt.Color.black);
         textoIncioSesion.setText("Inicio de sesion");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -69,26 +70,22 @@ public class Main extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(java.awt.Color.lightGray);
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ingrese las credenciales", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jPanel2.setForeground(java.awt.Color.black);
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Ingrese las credenciales"));
 
         jLabelUsuario.setBackground(new java.awt.Color(0, 0, 0));
-        jLabelUsuario.setForeground(new java.awt.Color(0, 0, 0));
         jLabelUsuario.setText("Usuario:");
 
-        jLabelContrasena.setForeground(new java.awt.Color(0, 0, 0));
         jLabelContrasena.setText("Contraseña:");
 
         txtIngresoUsuario.setPreferredSize(new java.awt.Dimension(14, 22));
 
+        txtContrasena.setEchoChar('?');
         txtContrasena.setMinimumSize(new java.awt.Dimension(14, 24));
 
         btnVerificar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        btnVerificar.setForeground(java.awt.Color.black);
         btnVerificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Image20250826204121.png"))); // NOI18N
         btnVerificar.setText("Verificar");
-        btnVerificar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnVerificar.setBorderPainted(false);
+        btnVerificar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnVerificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVerificarActionPerformed(evt);
@@ -139,10 +136,9 @@ public class Main extends javax.swing.JFrame {
         jPanel3.setBackground(java.awt.Color.lightGray);
 
         btnOcultar.setBackground(java.awt.Color.lightGray);
-        btnOcultar.setForeground(java.awt.Color.black);
         btnOcultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Image20250826204133.png"))); // NOI18N
         btnOcultar.setText("Ocultar");
-        btnOcultar.setBorderPainted(false);
+        btnOcultar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnOcultar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOcultarActionPerformed(evt);
@@ -150,10 +146,9 @@ public class Main extends javax.swing.JFrame {
         });
 
         btnVer.setBackground(java.awt.Color.lightGray);
-        btnVer.setForeground(java.awt.Color.black);
         btnVer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Image20250826204144.png"))); // NOI18N
         btnVer.setText("Ver");
-        btnVer.setBorderPainted(false);
+        btnVer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnVer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVerActionPerformed(evt);
@@ -235,7 +230,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     private void btnOcultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcultarActionPerformed
-        txtContrasena.setEchoChar('*');
+        txtContrasena.setEchoChar('?');
     }//GEN-LAST:event_btnOcultarActionPerformed
 
     private void btnVerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerActionPerformed
