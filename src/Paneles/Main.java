@@ -237,7 +237,7 @@ public class Main extends javax.swing.JFrame {
 
     private void btnOcultar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOcultar1ActionPerformed
         // TODO add your handling code here:
-        txtContrasena1.setEchoChar('?');
+        txtContrasena1.setEchoChar('*');
     }//GEN-LAST:event_btnOcultar1ActionPerformed
 
     private void btnVerificar1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnVerificar1KeyTyped
