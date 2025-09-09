@@ -79,7 +79,7 @@ public class Main extends javax.swing.JFrame {
 
         txtIngresoUsuario1.setPreferredSize(new java.awt.Dimension(14, 22));
 
-        txtContrasena1.setEchoChar('?');
+        txtContrasena1.setEchoChar('*');
         txtContrasena1.setMinimumSize(new java.awt.Dimension(14, 24));
 
         btnVerificar1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
